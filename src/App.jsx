@@ -387,7 +387,7 @@ function App() {
           <p className="text-sm text-gray-600 mt-1">Add the rates and amounts you exchanged USD to VND</p>
         </div>
 
-        <div className="p-6 overflow-y-auto flex-1">
+        <div className="p-6 max-h-2/4 overflow-y-auto flex-1">
           {tempTransactions.length === 0 ? (
             <p className="text-gray-500 text-center py-8">No transactions yet. Click "Add Transaction" to start.</p>
           ) : (
@@ -424,10 +424,11 @@ function App() {
               ))}
             </div>
           )}
-
+        </div>
+        <div className='p-6'>
           <button
             onClick={addTransaction}
-            className="w-full mt-4 py-3 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold rounded-lg transition flex items-center justify-center gap-2"
+            className="w-full py-3 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold rounded-lg transition flex items-center justify-center gap-2"
           >
             <Plus size={20} />
             Add Transaction
