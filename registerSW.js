@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/lkr-usd-vnd-converter/sw.js', { scope: '/lkr-usd-vnd-converter/' })})}
